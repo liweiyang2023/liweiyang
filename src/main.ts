@@ -3,6 +3,6 @@ import './style.css'
 import App from './App.vue'
 import router from './router'
 const env = import.meta.env
-console.log(env)
+import pinia from './store'
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(pinia).use(router).mount('#app')

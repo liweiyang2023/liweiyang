@@ -1,0 +1,79 @@
+.index-container
+  width: 88%
+  height: 80vh
+  margin-top: 50px
+  background: aquamarine
+  margin-left: 6%
+  margin-right: 6%
+  @media (max-width: 768px)
+    width: 100%
+    margin: 0
+    height: 100%
+//标签容器
+.tab-container
+  display: flex
+  height: 100%
+.tab-labels
+  flex: 1
+  display: flex
+  flex-direction: column
+  max-width: 100px
+  z-index: 20
+
+.header-container
+  padding-left: 100px
+  display: flex
+  .header-item
+    flex-grow: 1
+    text-align: center
+//  标签页
+.tab-label
+  flex: 1
+  display: flex
+  align-items: center
+  justify-content: center
+  writing-mode: vertical-lr
+  background-color: lightgray
+  max-width: 100%
+  overflow: hidden
+  white-space: nowrap
+  flex-shrink: 0
+  transition: background-color 0.3s ease
+.tab-label.active
+  background-color: gray
+  color: white
+.tab-content
+  flex: 1
+  display: flex
+  overflow: hidden
+  width: 100%
+.tab-pane
+  display: flex
+  width: 100%
+  flex-direction: column
+  transition: height 0.5s ease
+
+//内容区域
+.tab-item
+  height: 33.33%
+  display: flex
+  align-items: center
+  justify-content: center
+
+//二级内容区域
+.content-block
+  width: 33.33%
+  text-align: center
+  //二级内容滑块
+.content-block-slider
+  width: 33.33%
+  background: blue
+  height: 70%
+  color: white
+  font-weight: bold
+
+
+  @media (max-width: 768px)
+    //height: 100vh
+
+

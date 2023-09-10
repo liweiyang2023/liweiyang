@@ -1,0 +1,21 @@
+.header
+  height: 50px
+  width: 100%
+  background: linear-gradient(to right, rgb(135, 206, 235), rgb(0, 0, 128))
+  position: relative
+
+.header::before
+  content: ''
+  position: absolute
+  top: 100%
+  left: 50%
+  transform: translateX(-50%)
+  width: 30%
+  height: 30px
+  background: inherit
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%)
+.img
+  position: absolute
+  left: 50%
+  top: 50%
+  height: 100%
